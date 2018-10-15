@@ -17,6 +17,13 @@ class TheJinjaTest(unittest.TestCase):
         """
         client = app.test_client()
         r = client.get('/')
+
         assert r.status_code==200
+
+        assert b'Florence' in r.data
+        assert b'peanut butter' in r.data
+        assert b'jelly' in r.data
+        assert b'bananas' in r.data
+        assert b'<li>bread</li>' in r.data
 
 
