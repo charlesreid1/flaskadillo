@@ -1,4 +1,5 @@
 from flask_api import FlaskAPI
+from flask import Flask, request
 
 """
 Fly API: A Simple, Lightweight API
@@ -13,7 +14,10 @@ app = FlaskAPI(__name__)
 def api_out():
     return {'hello': 'world'}
 
-@app.route('/example/api/receiver')
+@app.route('/example/api/receiver', methods=['POST'])
 def api_in():
     return {'request data': request.data}
+
+if __name__=="__main__":
+    app.run()
 
