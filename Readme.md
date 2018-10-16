@@ -2,7 +2,7 @@
 
 ## What is flaskadillo?
 
-This repo has a couple of branches/tags that demonstrate some of Flask's capabilities.
+This repo has a couple of folders that demonstrate some of Flask's capabilities.
 
 The ILLO will cover:
 
